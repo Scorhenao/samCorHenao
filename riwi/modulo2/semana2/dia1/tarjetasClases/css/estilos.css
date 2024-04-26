@@ -1,0 +1,26 @@
+#titulo-principal{
+    color: darkmagenta;
+    text-align: center;
+    margin: 15; /*tamaño*/
+} /*id empiezan con #, se pueden separar con _ o -*/
+
+h2{
+    color: darkslateblue;
+}
+
+p{
+    color: darkorchid;
+}
+
+.titulo{
+    color: brown;
+    font-weight: bold;/*negrilla*/
+}
+
+.tarjeta{
+    border: 10px;
+    background-color: rgb(245,210,245);
+    text-align: center;
+    margin: 10px 115px;/*tamaño de caja*/
+    padding: 15px;/*espacio de dentro de caja*/
+}

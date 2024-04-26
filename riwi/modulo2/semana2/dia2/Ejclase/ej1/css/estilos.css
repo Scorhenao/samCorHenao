@@ -1,0 +1,65 @@
+/* Estilos para la cabecera */
+header {
+    color: darkslateblue; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Estilos para la navegación */
+nav {
+    width: 15%; /* Ancho de la barra de navegación */
+    float: left; /* Flota a la izquierda */
+}
+
+nav a {
+    background-color: rgb(84, 71, 169); /* Color de fondo de los enlaces */
+    border-radius: 10px 0 10px 0; /* Bordes redondeados */
+    color: rgb(164, 122, 164); /* Color del texto */
+    margin: 10px; /* Margen exterior */
+    padding: 10px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    display: block; /* Muestra como bloque */
+}
+
+/* Estilos para las secciones */
+.section,
+.section2,
+.section3 {
+    float: right; /* Flota a la derecha */
+    width: 75%; /* Ancho del contenido principal */
+    color: rgb(32, 25, 77); /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 1px 0 4px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-bottom: 30px; /* Margen inferior */
+    padding: 15px; /* Espaciado interno */
+    background: linear-gradient(rgb(132, 0, 255), pink); /* Gradiente de fondo */
+}
+
+.section2 {
+    background: linear-gradient(rgb(98, 32, 159), pink); /* Gradiente de fondo */
+    box-shadow: 1px 0 4px rgba(45, 48, 39, 0.3); /* Sombra */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+.section3 {
+    background: linear-gradient(rgb(39, 6, 70), pink); /* Gradiente de fondo */
+    box-shadow: 1px 0 4px rgba(45, 48, 39, 0.3); /* Sombra */
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilos para el contenido adicional */
+aside {
+    float: right; /* Flota a la derecha */
+    width: 30%; /* Ancho del contenido adicional */
+    padding: 5px; /* Espaciado interno */
+    margin: 5px; /* Margen exterior */
+    font-style: italic; /* Estilo de fuente en cursiva */
+    color: rgb(45, 13, 45); /* Color del texto */
+    box-shadow: inset 5px 0 5px darkmagenta; /* Sombra interna */
+}
+
+/* Estilos para el pie de página */
+footer a {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    align-items: flex-end; /* Alinea los elementos al final */
+}

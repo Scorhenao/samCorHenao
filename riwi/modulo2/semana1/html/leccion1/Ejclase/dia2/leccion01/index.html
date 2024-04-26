@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas, listas y mas...</title>
+
+</head>
+
+<body style="background-color: aquamarine;">
+
+    <h1>Elementos Html</h1>
+
+    <div class="title">
+        <h2>Developers</h2>
+        <h3>Tu centro de formacion favorito</h3>
+        <p>En la web de:<a href="https://moodle.riwi.io">Riwi.io</a>Encontraras mas informacion</p>
+        <hr>
+        <p>En otro orden de cosas...</p>
+    </div>
+
+    <table border="black">
+        <tr> <!--tr es fila-->
+            <td>Fila1, columna1</td><!--td es la celda-->
+            <td>fila2,columna2</td>
+        </tr>
+        <tr>
+            <td>fila2, columna1</td>
+            <td>fila2, columna2</td>
+        </tr>
+    </table>
+
+    <h3>Otra tabla combinando celdas..-</h3>
+    <!--- permite combinar columnas con celdas-->
+
+    <p>las etiquetas cosplan y rowspan</p>
+
+    <table border="1" cellpaddin="10"><!---cellpading espacio a los lados-->
+
+        <tr>
+            <td>Fila1, columna1</td>
+            <td colspan="3">fila1, columna2 3 y 4</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">fila2, columna 1 + fila3, columna1</td>
+            <td>Fila2, columna2</td>
+            <td>Fila 2, columna3</td>
+            <td>Fila2, columna4</td>
+        </tr>
+
+        <tr>
+            <td>Fila3, columna2</td>
+            <td>Fila3, columna3</td>
+            <td>Fila3, columna4</td>
+        </tr>
+
+    </table>
+
+    <h3>Ahora las listas</h3>
+    <h4>Lista con viñetas...</h4>
+
+    <ul>
+        <li>Primer item</li>
+        <li>Segundo item</li>
+        <li>Tercer item</li>
+        <li>Cuarto item</li>
+    </ul>
+<li>Lista fuera de lista</li>
+
+    <h4>Lista ordenada</h4>
+<!--lista con numeracion-->
+
+    <ol><!--un star="7" empieza de 7 o reverd para que lo haga al revez type="A" enumerar con otro simbolo-->
+        <li>primer item</li>
+        <li>segundo item</li>
+        <li>cuarto item</li>
+        <li>quinto item</li>
+    </ol>
+
+    <blockquote><!--cita textual lo toma en cuenta el buscador-->
+
+    <footer>
+        <cite class="author"> Tyler durten</cite>
+        <cite class="title">El club de la pelea</cite>
+        <p>Fuente:<a href="https://es.wikipedia.org/wiki/Fight_Club" target="_blank"></a></p> <!--target, sino abre pag en blanco-->
+    </footer>
+
+    </blockquote>
+
+    <blockquote cite="https://es.wikipedia.org/wiki/Fight_Club">
+        <p>La primera regla del club de la pelea es que nadie habla del club de la pelea</p>
+        <p class="author">Tyler Durden en el club de la pelea</p>
+    </blockquote>
+
+</body>
+
+</html>

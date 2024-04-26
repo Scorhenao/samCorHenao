@@ -1,0 +1,32 @@
+body{
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+div{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;/*tamaño en fraccion y cantidad de columnas*/
+
+    /*Forma responsive facil*/
+    grid-template-columns: repeat(
+        auto-fit,/*auto fit, si no hay elementos voy a poner las tarjetas mas grandes y ocupar el resto del espacio, ajustando "estirando",auto fill solo rellena*/
+        minmax(200px, 1fr)/*cada una es de 200px hasta q no encuentre espacio suficiente no sube la cantidad*/
+    );
+    gap: 16px;/*Espacio entre items*/
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*@media (width > 300px) {/*Cuanto el ancho de la pantalla sea de 300 px el numero de columnas sera 2*/
+    /*div{
+        grid-template-columns: 1fr 1fr;
+    }
+}*/
+
+img{
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+
+}

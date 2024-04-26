@@ -1,0 +1,146 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menuBotons {
+    float: right;
+}
+
+.menuNav {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    cursor: pointer; /* Para cambiar el cursor cuando pasa por encima */
+}
+
+.menuNav a {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(23, 23, 109);
+    border-radius: 10px;
+    padding: 16px;
+    margin: 2px;
+    font-size: 16px;
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+}
+
+.menuNav a:hover {
+    background-color: rgb(128, 122, 159);
+}
+
+.MenuHaciaAbajo {
+    position: absolute;
+    display: contents;
+    align-items: end;
+}
+
+.botonHaciaAbajo {
+    background-color: rgb(23, 23, 109);
+    color: white;
+    width: 100px;
+    padding: 16px;
+    font-size: 16px;
+    margin: 1px;
+    cursor: pointer; /* Para cambiar el cursor cuando pasa por encima */
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+}
+
+.contenidoHaciaAbajo {
+    display: none;
+    position: absolute; /* Para que al desplegar el menú, los elementos que se encuentren debajo no se muevan, sino que se oculten debajo del menú */
+    background-color: rgb(123, 67, 201);
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.contenidoHaciaAbajo a {
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.contenidoHaciaAbajo a:hover {
+    background-color: rgb(128, 122, 159);
+}
+
+.MenuHaciaAbajo:hover .botonHaciaAbajo {
+    background-color: rgb(37, 37, 91);
+}
+
+.MenuHaciaAbajo:hover .contenidoHaciaAbajo {
+    display: block;
+}
+
+.section1 {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 2%;
+    margin: 5%;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+
+img {
+    min-height: 350px;
+    min-width: 350px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.pullrequets {
+    min-height: 300px;
+    min-width: 500px;
+}
+
+/* Estilos adicionales para hacer la página responsive */
+
+/* Media query para ajustar estilos en dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .menuBotons {
+        float: none; /* Eliminar flotación en dispositivos móviles */
+        text-align: center; /* Alinear los elementos al centro */
+        margin-bottom: 10px; /* Añadir espacio entre los elementos */
+    }
+
+    .menuNav {
+        display: flex;
+        flex-direction: column; /* Cambiar a disposición de columna en dispositivos móviles */
+        align-items: center; /* Alinear los elementos al centro horizontalmente */
+    }
+
+    .menuNav a {
+        margin: 5px 0; /* Añadir espacio entre los enlaces */
+    }
+
+    .MenuHaciaAbajo {
+        position: static; /* Restaurar la posición predeterminada */
+        display: block; /* Restaurar el comportamiento de visualización de bloque */
+        margin-top: 10px; /* Añadir espacio entre los elementos */
+    }
+
+    .contenidoHaciaAbajo {
+        position: static; /* Restaurar la posición predeterminada */
+        display: block; /* Restaurar el comportamiento de visualización de bloque */
+    }
+
+    .section1 {
+        margin: 5% auto; /* Centrar el contenido */
+    }
+
+    img {
+        width: 100%; /* Hacer que la imagen ocupe el ancho completo del contenedor */
+        height: auto; /* Mantener la relación de aspecto */
+    }
+
+    .pullrequets {
+        min-height: auto; /* Restaurar la altura mínima predeterminada */
+        min-width: auto; /* Restaurar el ancho mínimo predeterminado */
+    }
+}

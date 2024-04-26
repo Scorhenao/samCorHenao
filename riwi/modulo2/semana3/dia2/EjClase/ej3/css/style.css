@@ -1,0 +1,385 @@
+html {
+    display: flex;
+    justify-content: center;
+    background-color: white !important;
+}
+
+body {
+    height: 500vh;
+    width: 80%;
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+    height: 62vh;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    background-color: #92d050;
+    padding: 10px;
+    width: 101%;
+    height: 9.5%;
+    padding: 0;
+}
+
+#tituloLogo{
+    padding: 10px 0px 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    min-width:101%;
+    background-color: black;
+}
+
+.ulNav{
+    display: flex;
+    color: white;
+    width: 40%;
+    height: 20%;
+    list-style: none;
+    padding: 19px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/*img principal*/
+
+
+.titulos{
+    display: inline-block;
+    height: 47vh;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#reserva{
+    text-decoration: none;
+    background-color: #ed7d31;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+#ImgPrincipal{
+    position: absolute;
+    width: 80.8%;
+    height: 100%;
+    top: 9%;
+    height: 54%;
+    z-index: -1;
+    margin: 0;
+}
+
+/*Cuerpo de central de la pagina*/
+/*Section 1*/
+.contenedorSection1{
+    display: flex;
+    margin: 0;
+    width: 101%;
+    height: 65vh;
+    background-color: #e2f0d9;
+}
+
+/*contenido en Section1*/
+.betweenSection1-1{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    padding: 20px;
+
+}
+
+.titulotransparente{
+    color: rgba(154,159,152,255);
+}
+
+#imgMyHcocina{
+    width: 100%;
+    height: 59%;
+    border-radius: 10px;
+    margin:0px;
+}
+
+#textoBetweenSection1{
+    text-align: justify;
+}
+
+
+/*segundo contenido de sectio1*/
+
+.betweenSection1-2{
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    margin: 0;
+}
+
+.betweenSection1-2-TextImg{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+}
+
+.betweenSection1-2-Container-TI{
+    display: flex;
+}
+
+
+.betweenSTItext{
+    display: inline-block;
+    margin: 10px 10px 10px 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.ImgsBetweenTextImg{
+    width: 50%;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*Section 2*/
+
+.contenedorSection2{
+    display: flex;
+    width: 101%;
+    height: 100vh;
+    margin: 0px 0px 0px 0px;
+    background-color: #dae3f3;
+}
+
+/*contenido en Section2*/
+.betweenSection2-1{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    margin: 30px;
+}
+
+/*primer contenido de section 2*/
+
+.tabla{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Fila1-tabla{
+    display: flex;
+    background-color: #70ad47;
+    width: 100%;
+    color: white;
+    border: solid 1px white;
+    justify-content: space-between;
+}
+
+.celdas{
+    margin: 0%;
+    padding: 10px;
+}
+
+.Fila2-tabla{
+    display: flex;
+    background-color:#d5e3cf;
+    width: 100%;
+    color: black;
+    margin: 0;
+    border: solid 1px white;
+    justify-content: space-between;
+}
+
+.celdas2{
+    margin: 0;
+    padding: 10px;
+}
+
+.Fila3-tabla{
+    display: flex;
+    background-color: #70ad47;
+    width: 100%;
+    color: black;
+    border: solid 1px white;
+    background-color:rgba(235,241,233,255);
+    justify-content: space-between;
+}
+
+.celdas3{
+    margin: 0;
+    padding: 10px;
+
+}
+
+.IconosRedes{
+    display: flex;
+}
+
+.iconos{
+    width: 15%;
+    height: 15%;
+}
+
+
+/*segundo contenido de section 2*/
+
+.betweenSection2-2{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.betweenSection2-2-TextImg{
+    display: flex;
+    text-align: center;
+}
+
+.betweenSection1-2-Container-TI{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contenMAp{
+    width: 100%;
+    margin: 0%;
+}
+
+#mapa{
+    width: 100%;
+    height: 100%;
+}
+
+
+.ImgsBetweenTextImg{
+    width: 50%;
+    height: 200px;
+    margin: 10px 10px 10px 10px;
+}
+
+/*Formulario*/
+.contenForm{
+    width: 100%;
+    height: 100%;
+}
+.formulario{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color:white;
+    padding: 10px 0px 0px 0px;
+}
+
+.ajustForm{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.inputs{
+    border-radius: 4px;
+    margin: 12px;
+    width: 90%;
+    height: 30px;
+}
+textarea{
+    border-radius: 4px;
+    margin: 12px;
+    width: 90%;
+    height: 70px;
+}
+.boton{
+    background-color: #ed7d31;
+    border-radius: 4px;
+    color: white;
+    width: 40%;
+    padding: 7px;
+    text-align: center;
+}
+
+
+
+/*Footer*/
+
+footer{
+    height: 100vh;
+    width: 101%;
+}
+
+.contenedorFooter{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.MenuFooter{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+    min-width:100%;
+    height: 20%;
+    background-color: black;
+}
+
+.ulFooter{
+    display: flex;
+    color: white;
+    width: 40%;
+    height: 20%;
+    list-style: none;
+    padding: 19px;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+/*conten footer*/
+
+.containerContenFooter{
+    display: flex;
+    width: 100%;
+    height: 60%;
+}
+
+.contenfooter1{
+    text-align: center;
+    background-color: #262626;
+    color: white;
+    width: 25%;
+    height: 100%;
+    padding: 0px 0px 70px 0px;
+}
+
+.contenfooter2{
+    text-align: center;
+    background-color: #404040;
+    color: white;
+    width: 25%;
+    height: 100%;
+    padding: 0px 0px 70px 0px;
+
+}
+
+.enlacesFooter{
+    text-decoration: none ;
+    color: white;
+}
+
+.containerDerechos{
+    margin: auto;
+    width:100%;
+    height: 20%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}

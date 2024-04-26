@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacta conmigo</title>
+
+</head>
+<body>
+    <section>
+        <form action="bd" method="get" border="1" required>
+            <center><fieldset width="40%">
+                <legend> Contact me :3</legend>
+                <label for="nombre">Nombre de la empresa:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingrese nombre de la empresa" required>
+            <br>
+
+                <label for="email">Ingrese el correo de la empresa:</label>
+                <input type="email" name="email" id="email" placeholder="ingrese el email de empresa" required>
+            <br>
+                <label for="numero">Numero de la empresa:</label>
+                <input type="text"  placeholder="Ingrece el numero de la empresa" required>
+            <br>
+            <label for="">Nivel de programacion para mi</label>
+            <select name="nivelPrograma" id="nivelPrograma" required aria-required="true">
+                <option value="">Elige</option>
+                <option value="senior" >Senior</option>
+                <option value="semiSenior" >Semi Senior</option>
+                <option value="junior" >Junior</option>
+                <option value="trainee" >Trainee</option>
+            </select>
+            <br>
+            <label for="">como trabajaria</label>
+            <select name="modoChamba" id="modoChamba" required aria-required="true">
+                <option value="">Elige</option>
+                <option value="backend">Backend</option>
+                <option value="frontend">Frontend</option>
+                <option value="bd">BD</option>
+            </select>
+            <br>
+
+            <label for="">Escriba el salario estimado</label>
+            <input type="number" id="salario" name="salario" placeholder="Ingrese salario" required>
+            <br>
+            
+            <label for="">describa los cosas basicas de la empresa o lo que desee aclarar:</label>
+            <br>
+            <textarea name="descriptEmpresa" id="descriptEmpresa" cols="30" rows="10" required></textarea>
+            <br>
+
+            <input type="submit">
+        </fieldset></center>
+        </form>
+
+        <p>si quiere volver a ver mi hoja de vida de click:<a href="../tarea4/index.html">Aqui</a></p>
+    </section>
+
+</body>
+</html>

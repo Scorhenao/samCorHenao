@@ -1,0 +1,26 @@
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px crimson;
+    color: darkorange;
+}
+
+div.contenedor {
+    display: flex;
+    background-color: rgb(194, 102, 102);
+    color: aliceblue;
+    flex-wrap: wrap;/*especifica elementos hijos, obligadoa a ponerse ne la posicion indicada*/
+    /*flex-direction: row-reverse; pone columna alrevez*/
+    justify-content: center;
+    font-size: 20px;
+    height: 300px;
+    align-items: stretch;/**/
+}
+
+div.contenedor > p {
+    background-color: sandybrown;
+    color: blanchedalmond;
+    margin: 20px;
+    padding: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}

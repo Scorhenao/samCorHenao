@@ -1,0 +1,290 @@
+body, html{
+    display: flex;
+    overflow-y: hidden;
+    gap: 1%;
+    height: 100%;
+    width: 100%;
+}
+
+/*General ajust*/
+p{
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+}
+/*Aside Nav bar*/
+
+.SideNavBar{
+    width: 15%;
+}
+
+.nav-item:hover{
+    background-color: rgba(0, 0, 0, 0.093);
+    border-radius: 8px;
+
+}
+
+
+.nav-item:hover .x1lliihq{
+    transition-duration: 300ms;
+    transform: scale(1.1);
+
+}
+
+.nav-item:hover .rounded-circle{
+    transition-duration: 300ms;
+    transform: scale(1.1);
+
+}
+
+.d-flex {
+    height:100%;
+}
+
+.bi {
+    min-height: 60px;
+}
+
+@media (width < 1263px) {
+    .PtextNavBar{
+        display:none;
+    }
+
+    .SideNavBar{
+        width: 80px;
+    }
+
+}
+
+/*Config NavBar below*/
+
+.BelowNavBar {
+    display:none;
+}
+
+@media (width < 768px){
+    .SideNavBar{
+        display: none;
+    }
+    .BelowNavBar{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+    }
+    .UlBlowNavBar{
+        
+        gap:40px;
+    }
+}
+
+/*Parte central arriba*/
+
+.main-section{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    height: 30%;
+    justify-content: center;
+    align-items:center;    
+    width: 100%;
+    
+}
+
+.foto-perfil{
+    display: flex;
+    height: 55%;
+    width: auto;
+    margin-right: 5px;
+}
+
+
+/*Caja del texto*/
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 60%;
+    width: auto;
+}
+
+.btn{
+    background-color:rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53);
+    font-weight: bold;
+
+}
+
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-group{
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+}
+
+
+/*Botones*/
+#boton1{
+    width: 150px;
+    height: 50%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#boton2{
+    width: 150px;
+    height: 50%;
+    border-radius: 5px;
+}
+
+#boton3{
+    width: 150px;
+    padding:5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 9px;
+}
+
+
+#nombre{
+    width: 100%;
+    text-align: justify;
+    justify-content: left;
+}
+
+.informacion p{
+    display: flex;
+    justify-content: end;
+    margin: 0%;
+
+}
+
+.filas{
+    display:flex;
+    height: 25%;
+    justify-content: space-around;
+    width: 100%;
+}
+
+span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+#primera{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 15%;
+    width: 100%;
+    gap: 6%;
+}
+
+#segunda{
+    height: 15%;
+    width: 100%;
+    gap: 10px
+}
+
+.filas, #subnombre{
+    justify-content: left;
+    margin-top: 0%;
+}
+
+#subnombre{
+    height: 15%;
+}
+
+#tercera{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+}
+
+.filas, #seguidores{
+    justify-content: left;
+    margin-top: 0%;
+}
+
+/*Estados*/
+
+#estados{
+    height: 20%;
+    margin-top: 2px;
+    width: 10%;
+}
+
+#estados p{
+    margin-top: 5px;
+    
+}
+
+
+.MainImg{
+    border:solid #e4e4e4;
+    padding: 20px;
+    position: relative;
+}
+
+
+/*Fotos*/
+
+main{
+    width: 100%;
+    height: 55%;
+    gap: 0;
+}
+
+.opciones-container{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#publicaciones{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#guardado{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+#etiquetadas{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/*Imagenes de feed*/
+
+.row{
+    width: 20%;
+    border:solid;
+}
+
+.col img{
+    height: 100%;
+    width: 100%;
+}

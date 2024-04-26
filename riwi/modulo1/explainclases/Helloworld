@@ -1,0 +1,18 @@
+
+#from os sacar del sistema operativo
+
+print ("hello, world XD!") #print es equivalente a un echo y siempre que vaya luego de unb condicional se usa un tab
+"""comentario funciona con un #,''' ''' o """
+
+#c.split(separator, maxsplit) 
+
+#las variables de python se declaran de la siguiente manera ademas este tipo de variables se pueden usar tambien para imprimir un resultado de las otras
+#las comillas simples o dobles no importan pero cambian la variable a tipo text
+
+#a = 15
+#b = 20
+#c = a + b
+#print (c)
+
+
+#exit()#para terminar un programa o la ejecucion de uno el ejcutador exit es equivalente a un //final

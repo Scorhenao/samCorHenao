@@ -1,0 +1,67 @@
+.contenedor-slide{
+display: flex;
+width: 100%;
+height: 200px;
+display: grid;
+padding: 0;
+place-content: center;
+border-radius: 40px;
+
+}
+
+.slide{
+direction: flex;
+width: 100%;
+max-width: 100%;
+margin: 0;
+height: 100%;
+align-items: center;
+overflow: hidden; /*todo lo que supere el tamaño definido se ocultara*/
+border-radius: 10px;
+}
+
+.slide ul{
+    display: flex;
+    padding: 0;
+    width: 400%;/*100% cuadro veces por la cantidad de img en el contenedor*/
+    justify-content: space-between;
+    animation: slide 15s infinite cubic-bezier(0.55, 0.48, 0.37, 0.92); /*nombramos la app y la duracion de todal de esta, ademas que sea infinita y elegimos una animacion predeterminada*/
+}
+
+
+img{
+    position: relative;
+    bottom: 50px;
+    width: 250px;
+    height: 250px;
+    clip-path: circle(40%);
+}
+
+.contenedor-slide-con-texto {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-slide {
+    width: 70%; /* Ajusta el ancho del contenedor del slide según sea necesario */
+}
+
+.texto-al-lado {
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    color: white; /* Cambia el color del texto según sea necesario */
+    width: 30%; /* Ajusta el ancho del texto según sea necesario */
+}
+
+@keyframes slide{
+    0% {margin-left: 0;} /*porcentajes de uso de tiempo total de la animacion*/
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}

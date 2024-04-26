@@ -1,0 +1,34 @@
+/*Este es el archivo de estilos CSS*/
+h1{
+    text-align: center;
+    color: beige;
+    background-color: darkorange !important;
+    width: 80%;
+    margin: auto;
+}
+
+div.estatico{
+    position: static;/*nada lo puede mover*/
+    top: 10px;/*Esta instruccion no se ejecuta debido a que la posicion es estatica*/
+    border: 2px solid midnightblue !important;
+    background-color: lightgray !important;
+    padding: 10px;
+}
+
+div.relativo{
+    position: relative;/*Se deja mover*/
+    top: 10px;
+    border: 2px dashed darkgreen !important;
+    background-color: lightskyblue !important;
+    padding: 10px;
+}
+
+div.absoluto{
+    position: absolute;/*se puede mover independientemente si esta en otro elemento*/
+    bottom: 0;
+    right: 0;
+    border: 2px dashed aquamarine !important;
+    background-color: aquamarine;
+    padding: 25px;
+    z-index: -1;/*elemento pone detras de los demas con - y con + adelante*/
+}

@@ -1,0 +1,113 @@
+html {
+    background-color: #3a3d47 !important;
+
+}
+
+body {
+    width: 1200px;
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*header*/
+nav {
+    display: flex;
+    background-color: #1551a1;
+    height: 20%;
+}
+
+.navegacion {
+    display: flex;
+}
+
+.botones-navegacion {
+    list-style: none;
+    border: white solid 1px;
+    color: white;
+    padding: 10px;
+}
+
+#imgMecanico {
+    width: 100%;
+}
+
+/*titulo*/
+
+#titulo {
+    text-align: center;
+    color: #ff7600;
+}
+
+/*contenido*/
+.container {
+    display: flex;
+}
+
+.box-container {
+    display: inline-block;
+    border: solid 1px black;
+    height: 450px;
+}
+
+.imgServicios {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    background-color: #1551a1;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.textoContenido {
+    text-align: justify;
+}
+
+
+.botonAcceso {
+    color: white !important;
+    text-align: center;
+    padding: 13px;
+    width: 80px;
+    height: 100px;
+    background-color: #1551a1;
+    text-decoration: none !important;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background-color: #062348;
+}
+
+.contenedorFooter {
+    display: flex;
+}
+
+.footerTexto {
+    display: inline-block;
+    width: 50%;
+}
+
+.footerRedes {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    color: white;
+}
+
+.IconosRedes {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}

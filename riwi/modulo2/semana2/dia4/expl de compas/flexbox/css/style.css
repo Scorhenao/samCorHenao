@@ -1,0 +1,76 @@
+section{
+    display: flex;
+}
+
+section > p{
+    border: 2px solid;
+    margin: 2px;
+    background-color:cornflowerblue;
+    display: inline-block;/*en bloques y que no se sbreescriban*/
+    font-size: 20px;
+}
+
+.columna{
+    flex-direction: column;/*que vaya como columna*/
+}
+
+.columnainversa{
+    flex-direction:column-reverse;/*organiza los items alrevez*/
+}
+
+.fila{
+    flex-direction: row;
+}
+
+.fila2{
+    flex-direction: row-reverse;/*reverso de tdo*/
+}
+
+.principio{
+    justify-content: start;/*pone al inicio*/
+}
+
+.center{
+    justify-content: center;/*alinea el flex al centro*/
+}
+
+.final{
+    justify-content: end;/*alinea flex al final*/
+}
+
+/*acomodar por espacios*/
+
+.espacio-intermedio{
+    justify-content: space-between;/*no pone espacio a los extremos*/
+}
+
+.espacio-alrededor{
+    justify-content: space-around;/*deja mitad de espacio en el centro al borde*/
+}
+
+.espacio-igual{
+    justify-content: space-evenly;/*pone misma cantidad de espacio en centro y borde*/
+}
+
+/*grap responsive*/
+
+.acomodar{
+    flex-wrap: wrap;
+}
+
+.noacomodar{
+    flex-wrap: nowrap;
+}
+
+.acomodar-alrevez{
+    flex-wrap: wrap-reverse;
+}
+
+/*Ordenar funciona como python al ordenar en una lista*/
+#ordenar{
+    order: 2;/*0 a infinito como en py*/
+}
+/*Crecer o grow*/
+#crecer{
+    flex-grow: 5;/*aumenta el tamaño remplazando el width, obliga a los demas a ser pequeños*/
+}

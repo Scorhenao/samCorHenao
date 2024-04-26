@@ -1,0 +1,121 @@
+header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: royalblue;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 30px;
+}
+
+.courier{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#fuenteTitulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkblue;
+/*TODAS LAS FUENTES LOCALES*/
+/*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida'
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-family: 'Times New Roman', Times, serif;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-family: Arial, Helvetica, sans-serif;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family:Georgia, 'Times New Roman', Times, serif ;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+font-family:cursive ;
+font-family:fantasy ;
+font-family:monospace ;
+font-family:sans-serif ;
+font-family:serif ;
+font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;*/
+
+}
+
+/*Clases de fuentes locales*/
+.franklin{
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.gillSans{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.lucidaSnas{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.segoeUI{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.trebuchet{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cambria{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.georgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.impact{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.verdana{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+
+.sans-serif{
+    font-family: sans-serif;
+}
+
+.serif{
+    font-family: serif;
+}
+
+.sistemUI{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*Clases de fuentes externas*/
+/*coursie New*/
+
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bruno-ace-regular {
+    font-family: "Bruno Ace", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.timesNewRoman{
+    font-family: 'Times New Roman', Times, serif;
+}

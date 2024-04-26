@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px; /*tamaño de filas*/
+
+    grid-template-columns: 100px 100px 100px 100px ;/*tamaño de columnas*/
+
+    grid-gap:5px; /*agrega espacio en blanco*/
+
+    /*grid-template-columns: 1fr 2fr 3 fr;/*organiza segun las fracciones que se le dan*/
+
+
+    /*grid-column-gap: 100px; /*espacios en blanco*/ 
+
+}
+
+#uno{
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    border: black 5px solid;
+    padding: 15px;
+    grid-column-start: 1;/*donde empieza la columna*/
+    grid-column-end: 5;
+    grid-row-end: 3;/*donde termina la fila*/
+    grid-row-start: 1;/*donde empieza la fila*/
+}
+
+.dos{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 15px;
+    border: black 5px solid;/*el resto toma lo del contrario osea lo del container*/
+}

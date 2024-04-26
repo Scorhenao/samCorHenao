@@ -1,0 +1,726 @@
+/*
+    <!-- Samuel-Cordoba-Henao -->
+    <!-- 09-Abril-2024 -->
+    <!-- Jack-MA -->
+*/
+/*Configuraciones generales*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #000000cc;
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+/* Root */
+
+:root {
+    /* Colors */
+    --color-dark: #000000;
+    --color-primary-light: #ffffff;
+    --color-light: #000000;
+    /* Fonts */
+    --font-primary: "Lato", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+    /* Spaces */
+    --space-xxs: 5px;
+    --space-xs: 10px;
+    --space-sm: 15px;
+    --space-md: 20px;
+    --space-lg: 30px;
+    --space-xl: 40px;
+    /* Box Shadows */
+    --shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-dark: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Border-radius */
+    --border-radius-sm: 8px;
+    --border-radius-md: 10px;
+    --border-radius-lg: 12px;
+}
+
+/* Globals */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    font-size: 3.6rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+p {
+    margin: 0;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Layout */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 4400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*MI CODIGO EMPIEZA AQUI*/
+
+header {
+    margin-top: 30px;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 880px;
+    /*tamaño para cada section*/
+    background-image: url(../img/czM6Ly9tZWRpYS1wcml2YXRlLmNhbnZhLmNvbS9vcmVYRS9NQUdCYUdvcmVYRS8xL3AuanBn.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*MENU DE NAVEGACION*/
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    gap: 10px;
+}
+
+#BoxImgLogo {
+    width: 100%;
+    min-width: auto;
+    min-width: 20%;
+    height: auto;
+}
+
+#BoxTextLogo {
+    display: flex;
+    width: 100%;
+    min-width: auto;
+    align-items: center;
+    font-size: 200%;
+}
+
+/*Textos de navegacion*/
+.contentUl {
+    position: relative;
+    width: 100%;
+    min-width: auto;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavUl {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.NavUl li a {
+    color: white;
+}
+
+.ContenedorTextHeader {
+    width: 100%;
+    height: 60%;
+}
+
+#BoxTextHeader {
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+#SmallHeader {
+    color: gray;
+}
+
+/*PRIMERA SECTION DE PERFIL DE EMPRESA*/
+
+.ContenedorPerfil {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    gap: 60px;
+    background-color: #000000b9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ContentImgPerfil {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+#AjusImgPerfil {
+    width: 100%;
+    height: 50%;
+}
+
+.contentTextPerfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    width: 100%;
+    padding-right: 30px;
+}
+
+#BotonPerfil {
+    color: white;
+    background-color: gray;
+    padding: 10px;
+}
+
+/*SEGUNDA SECCION DE NUESTROS SERVICIOS*/
+.ContenedorServicios {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 800px;
+    gap: 60px;
+    background-color: #000000b9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ContentServiciosLeft {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    gap: 50px;
+    min-height: 100%;
+    padding-left: 30px;
+}
+
+.ContentServiciosLeft:first-child {
+    height: 50%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.ContentServiciosLeft:last-child {
+    display: flex;
+    position: relative;
+    height: 50%;
+    width: 100%;
+    justify-items: center;
+}
+
+#BoxImgServicios {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#AjustImgServicios {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*PARTE DE DERECHA SERVICIOS*/
+.ContentServiciosRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.NumerosServicios {
+    color: gray;
+}
+
+.TextoGrisServicios {
+    color: white;
+}
+
+.EspacioTitleServicios {
+    margin-bottom: 2px;
+}
+
+/*TERCERA SECCION DE LISTA DE CLIENTES*/
+
+.ContenedorListClient {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    gap: 60px;
+    background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.ContentTexListClient {
+    height: 10%;
+    width: 100%;
+}
+
+.AjustTextoListClient {
+    color: #000000;
+}
+
+/*IMGS DE LISTA DE CLIENTES*/
+.ContentImgsListClient {
+    display: grid;
+    position: relative;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    border: solid rgb(0, 0, 0);
+    height: 80%;
+    width: 100%;
+}
+
+.ContentImgsListClient div:first-child {
+    background-image: url(../img/1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    z-index: 1;
+
+    grid-column-start: 1;
+    grid-column-end: 1;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.ContentImgsListClient div:nth-child(2) {
+    background-image: url(../img/2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative;
+
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.ContentImgsListClient div:nth-child(3) {
+    background-image: url(../img/3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.ContentImgsListClient div:last-child {
+    background-image: url(../img/3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    position: relative;
+
+    grid-column-start: 4;
+    grid-column-end: 6;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+#AcomodarTextImgListClient1 {
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 95%;
+    background-color: #000000;
+}
+
+.AcomodarTextImgListClient {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+    background-color: #000000;
+}
+
+/*codigo para acomodar bolitas*/
+#AcomodarCirculoListClient {
+    display: flex;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    z-index: 3;
+    left: -2%;
+    top: 20%;
+    clip-path: circle(25%);
+    background-color: #d6d3d3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#AjustPCirculoListCLient {
+    position: absolute;
+    left: 30%;
+    color: rgb(0, 0, 0);
+
+}
+
+/*bolita 2*/
+#AcomodarCirculoListClient2 {
+    display: flex;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    z-index: 3;
+    left: 92%;
+    top: 20%;
+    clip-path: circle(25%);
+    background-color: #d6d3d3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#AjustPCirculoListCLient2 {
+    position: absolute;
+    left: 30%;
+    color: rgb(0, 0, 0);
+
+}
+
+/*bolita 3*/
+#AcomodarCirculoListClient3 {
+    display: flex;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    z-index: 3;
+    left: 54%;
+    top: 52%;
+    clip-path: circle(25%);
+    background-color: #d6d3d3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#AjustPCirculoListCLient3 {
+    position: absolute;
+    left: 30%;
+    color: rgb(0, 0, 0);
+
+}
+
+/*bolita 4*/
+#AcomodarCirculoListClient4 {
+    display: flex;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    z-index: 3;
+    left: 92%;
+    top: 52%;
+    clip-path: circle(25%);
+    background-color: #d6d3d3;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#AjustPCirculoListCLient4 {
+    position: absolute;
+    left: 30%;
+    color: rgb(0, 0, 0);
+
+}
+
+/*CUARTA SECCION DE TRABAJEMOS JUNTOS*/
+
+.ContenedorTrabajemosJuntos {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    gap: 60px;
+    background-color: #000000b9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+.ContentImgTrabajemosJuntos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 30px;
+    width: 60%;
+    height: 100%;
+}
+
+/*PARTE DERECHA DE TRABAJEMOS JUNTOS*/
+.ContentTextTrabajemosJuntos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+/*QUINTA SECCION DE FOOTER*/
+footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    gap: 10%;
+    background-color: #000000b9;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 40px;
+}
+
+/*parte izquierda de footer*/
+.ContentFooter {
+    position: relative;
+    width: 40%;
+    min-width: 10%;
+    height: 100%;
+}
+
+/*parte de el medio de footer*/
+.ContentFooterCenter {
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+
+#FooterUl {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    gap: 50px;
+}
+
+/*parte derecha de footer*/
+.ContentFooterI {
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    height: 100%;
+}
+
+.BoxIconosF {
+    background-color: white;
+    position: relative;
+    clip-path: circle(30%);
+    width: 33.33%;
+    height: 100%;
+}
+
+.AjustImgsF {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+/*No lo puse para intentar seguir lo maximo posible la maquetacion requerida*/
+/*Responsive Footer*/
+/*@media (width < 1221px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 900px;
+        gap: 0px;
+        background-color: #000000b9;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 40px;
+    }
+
+    .BoxIconosF {
+        background-color: white;
+        position: relative;
+        clip-path: circle(18%);
+        width: 33.33%;
+        height: 100%;
+    }
+
+    .AjustImgsF {
+        position: absolute;
+        width: 50%;
+        height: 30%;
+        left: 25%;
+        top: 35%;
+    }
+}
+*/
+/*Responsive de bolitas*/
+@media (width < 1050px) {
+
+    /*codigo para acomodar bolitas*/
+    #AcomodarCirculoListClient {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        z-index: 3;
+        left: 0%;
+        top: 18%;
+        clip-path: circle(25%);
+        background-color: #d6d3d3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #AjustPCirculoListCLient {
+        position: absolute;
+        left: 25%;
+        font-size: 10px;
+        color: rgb(0, 0, 0);
+    }
+
+    /*bolita 2*/
+    #AcomodarCirculoListClient2 {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        z-index: 3;
+        left: 90%;
+        top: 18%;
+        clip-path: circle(25%);
+        background-color: #d6d3d3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #AjustPCirculoListCLient2 {
+        position: absolute;
+        left: 30%;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+    }
+
+    /*bolita 3*/
+    #AcomodarCirculoListClient3 {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        z-index: 3;
+        left: 54%;
+        top: 52%;
+        clip-path: circle(25%);
+        background-color: #d6d3d3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #AjustPCirculoListCLient3 {
+        position: absolute;
+        left: 30%;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+    }
+
+    /*bolita 4*/
+    #AcomodarCirculoListClient4 {
+        display: flex;
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        z-index: 3;
+        left: 90%;
+        top: 52%;
+        clip-path: circle(25%);
+        background-color: #d6d3d3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    #AjustPCirculoListCLient4 {
+        position: absolute;
+        left: 30%;
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+    }
+}

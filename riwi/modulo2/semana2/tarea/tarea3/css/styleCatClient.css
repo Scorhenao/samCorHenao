@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/*resetear por defecto css*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+*/
+/*fondo*/
+body, html {
+    background-color: #242430;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+/*swiper slide*/
+
+/* Ajuste del tamaño del contenedor del slider */
+.mySwiper-1 {
+    display: flex;
+    width: 60%; /* Cambia el tamaño del contenedor del slider según sea necesario */
+    height: 40%;
+    border: solid #FEFFFF;
+
+}
+
+/* Ajuste del tamaño de las imágenes */
+.img-inside-slide{
+    display: flex;
+    height: 60%;
+    width: 60%;
+    padding: 10%;
+    margin: 7%;
+    border: solid blue;
+}
+
+/*flechas cambio producto*/
+.swiper-button-prev::after{
+    font-size: 25px;
+}
+
+.swiper-button-next::after{
+    font-size: 25px;
+}
+
+.swiper-button-prev{
+    color: #FEFFFF;
+}
+
+.swiper-button-next{
+    color: #FEFFFF;
+}
+
+/*bolitas debajo de producto */
+.swiper-pagination-bullet{
+    background-color:#747474 ;
+}

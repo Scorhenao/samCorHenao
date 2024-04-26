@@ -1,0 +1,503 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: block;
+    padding: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/*nav*/
+header{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+    padding: 0;
+    width: 100%;
+}
+
+.MenuHaciaAbajo {
+    width: 15%;
+    height: 24%;
+    margin: 1%;
+}
+
+.botonHaciaAbajo {
+    background-color: rgb(44, 24, 111);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    font-size: 16px;
+    margin: 1px;
+    cursor: pointer;
+    /* Para cambiar el cursor cuando pasa por encima */
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(255, 255, 255);
+    
+    /*tipo de letra*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.contenidoHaciaAbajo {
+    display: none;
+    position: absolute;
+    /* Para que al desplegar el menú, los elementos que se encuentren debajo no se muevan, sino que se oculten debajo del menú */
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    color: aliceblue;
+    width: 15%;
+}
+
+.contenidoHaciaAbajo a {
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%
+}
+
+.contenidoHaciaAbajo a:hover {
+    background-color: rgb(128, 122, 159);
+    width: 81%;
+}
+
+.MenuHaciaAbajo:hover .botonHaciaAbajo {
+    background-color: rgb(37, 37, 91);
+}
+
+.MenuHaciaAbajo:hover .contenidoHaciaAbajo {
+    display: block;
+}
+
+/*texto al lado nav*/
+.texto-al-lado{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+#font-texto-al-lado{
+    
+    /*font de texto*/
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+/*segundo menu desplegable*/
+
+.botonHaciaAbajo2 {
+    background-color: rgb(44, 24, 111);
+    color: white;
+    width: 100%;
+    overflow: hidden;
+    padding: 16px;
+    font-size: 16px;
+    margin: 1px;
+    cursor: pointer;
+    /* Para cambiar el cursor cuando pasa por encima */
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgb(0, 0, 0);
+
+    /*tipo de letra*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.contenidoHaciaAbajo2 {
+    display: none;
+    position: absolute;
+    /* Para que al desplegar el menú, los elementos que se encuentren debajo no se muevan, sino que se oculten debajo del menú */
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+    border-radius: 10px;
+    color: aliceblue;
+    width: 220px;
+    overflow: hidden;
+}
+
+.contenidoHaciaAbajo2 a {
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.contenidoHaciaAbajo2 a:hover {
+    background-color: rgb(128, 122, 159);
+}
+
+.MenuHaciaAbajo2:hover .botonHaciaAbajo2 {
+    background-color: rgb(37, 37, 91);
+}
+
+.MenuHaciaAbajo2:hover .contenidoHaciaAbajo2 {
+    display: block;
+}
+
+/*segunda parte*/
+
+.contenedor-cabeza {
+    display: flex;
+    height: 89%;
+    width: 100%;
+    word-wrap: break-word;
+    background-color: #ffffff;
+}
+
+.banner {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.texto-contenedor-cabeza{
+    display: inline-block;
+}
+
+.texto-banner {
+    display: flex;
+    color: rgb(44, 24, 111);
+    font-size: 28px;
+    justify-content: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    /*font de titulos*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.banner-num {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+    /*font de texto*/
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+
+}
+
+.info-cabeza {
+    display: inline-block;
+    width: 20%;
+    height: 40%;
+}
+
+.box-info-cabeza1 {
+    display: flex;
+    width: 92;
+    border: solid 8px green;
+    height: 82px;
+    margin: 2px;
+    justify-content: center;
+}
+
+.box-info-cabeza2 {
+    display: flex;
+    width: 92;
+    border: solid 8px green;
+    height: 82px;
+    margin: 2px;
+    justify-content: center;
+}
+
+.box-info-cabeza3 {
+    display: flex;
+    width: 80;
+    border: solid 8px green;
+    height: 82px;
+    margin: 2px;
+    justify-content: center;
+}
+
+.texto-info-box {
+    display: flex;
+    color: green;
+    font-size: 28px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    align-items: center;
+}
+
+
+/*FOOTER*/
+footer .container{
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    justify-content:space-around;
+    padding: 40px 100px;
+}
+
+.footer-col ul{
+    list-style: none;
+}
+
+.footer-col h4{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 22px;
+    position: relative;
+   
+    /*tipo de letra*/
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.footer-col h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: rgb(44, 24, 111);
+
+    bottom: -10px;
+}
+
+.footer-col ul li{
+    padding: 10px 0;
+        /*font de texto*/
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+.footer-col ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.7;
+    transition: 0.5s;
+        /*font de texto*/
+        font-family: "Karla", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+}
+.footer-col ul li a:hover{
+    opacity: 1;
+}
+.footer-col input{
+    border: none;
+    width: 314px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.inputDescripcion{
+    width:330px;
+}
+.footer-col .inputSubmit{
+    padding: 0px 20px;
+    background-color: rgb(44, 24, 111);
+    border: none;
+    color: white;
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.footer-col .inputSubmit:hover{
+    background-color: rgb(128, 122, 159);
+
+}
+.col p{
+    color: white;
+}
+.row hr{
+    opacity: 0.7;
+}
+
+.socialIcons{
+    display:inline-flex;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+.img-footer{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: -5px;
+}
+
+
+
+.row .socialIcons i:hover{
+    color: #e91e64;
+}
+
+
+
+/*pantallas de menos de 600px*/
+@media (max-width: 600px){
+    footer{
+        margin: 800px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+
+/*pantallas de menos de 700px*/
+@media (max-width: 700px){
+    footer{
+        margin: 200px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+/*pantallas de menos de 800px*/
+@media (max-width: 800px){
+    footer{
+        margin: 500px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+/*pantallas de menos de 900px*/
+@media (max-width: 900px){
+    footer{
+        margin: 200px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+/*pantallas de menos de 1000px*/
+@media (max-width: 1000px){
+    footer{
+        margin: 200px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+/*pantallas de menos de 740px*/
+@media (max-width: 740px){
+    footer{
+        margin: 600px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}
+
+/*pantallas de menos de 740px*/
+@media (max-width: 740px){
+    footer{
+        margin: 500px 0px 0px 0px;
+    }
+    footer .row{
+        flex-direction: column;
+        padding: 0px 0px 0px 0px;
+    }
+
+    footer .footer-col ul{
+        margin-left: 0px;
+        margin-bottom: 40px;
+    }
+    .footer-col input{
+        width: 100%;
+    }
+}

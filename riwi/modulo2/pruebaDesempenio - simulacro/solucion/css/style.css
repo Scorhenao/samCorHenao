@@ -1,0 +1,411 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*estilo text logo*/
+
+.Ajust-chewy {
+  height: 60%;
+  width: 40%;
+  position: relative;
+}
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  padding: 3%;
+  font-size: 160%;
+  position: absolute;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  left: 10%;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 20%;
+  margin: 0px 0px 50px 0px;
+  background-image: url("../img/Mis\ viajes\ \(4\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imgNav {
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+  height: 20%;
+  z-index: -1;
+  position: absolute;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  height: 30%;
+  background-color: #4d5764c5;
+  margin: 0px 0px 0px 0px;
+}
+
+.contenedorLogo {
+  position: relative;
+  margin: 0;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  padding: 0;
+}
+
+.iconosNav {
+  display: flex;
+  width: 25%;
+  margin: 0px 0px 6px 0px;
+}
+
+.iconos {
+  border-radius: 30px 30px 30px 30px;
+  margin: 0px 2px 0px 0px;
+  -webkit-border-radius: 30px 30px 30px 30px;
+  -moz-border-radius: 30px 30px 30px 30px;
+  -ms-border-radius: 30px 30px 30px 30px;
+  -o-border-radius: 30px 30px 30px 30px;
+}
+
+.contenedorBuscador {
+  display: flex;
+  width: 25%;
+  margin: 0px 0px 6px 10px;
+}
+
+#menuIcon {
+  margin: 0px 0px 0px 40px;
+}
+
+/*contenido*/
+/*section 1*/
+.contenedorSection1 {
+  display: flex;
+  width: 80%;
+  height: 60%;
+  margin: auto;
+}
+
+.betweenSection1-1 {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  margin: 0px 10px 0px 0px;
+}
+/*imagnen 1 section 1-1*/
+.ContenimgMagdalena {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0px 0px 10px 0px;
+}
+
+.imgSection1-1 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.textoSection1-1 {
+  position: absolute;
+  width: 100%;
+  height: 14%;
+  top: 86%;
+  left: 0px;
+  color: white;
+  font-size: 13px;
+  background-color: #000000b8;
+}
+
+.AjustPSection1 {
+  color: white;
+  padding: 19px;
+}
+/*imagen 2 sention 1-1*/
+.ContenimgSantander {
+  position: relative;
+  width: 100%;
+  height: 40%;
+  margin: 0px 0px 10px 0px;
+}
+
+.textoSection1-2 {
+  position: absolute;
+  width: 100%;
+  height: 14%;
+  top: 86%;
+  left: 0px;
+  color: white;
+  font-size: 11px;
+  background-color: #000000e0;
+}
+.AjustPSection2 {
+  color: white;
+  padding: 10px;
+}
+
+.img2Section1-1 {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*sectio1-2*/
+.betweenSection1-2 {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+}
+
+.ImgBS1-2 {
+  position: relative;
+  display: flex;
+  height: 50%;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.ImsBS1-2-ajust {
+  width: 50%;
+  height: 100%;
+  margin: 0px 10px 0px 0px;
+}
+.textoSection2-1 {
+  position: absolute;
+  width: 49%;
+  height: 14%;
+  top: 86%;
+  left: 0px;
+  color: white;
+  font-size: 13px;
+  background-color: #000000b8;
+}
+
+.AjustPSection2-1 {
+  color: white;
+  padding: 12px;
+}
+
+.contenedorImgArauca {
+  width: 100%;
+  height: 50%;
+}
+
+.ImgAraca-ajust {
+  width: 101%;
+  height: 100%;
+}
+
+/*CONTENIDO 2*/
+
+.contenedorSection2 {
+  margin: 50px 10% 50px 10%;
+  display: flex;
+  width: 80%;
+  height: 70%;
+  justify-content: space-between;
+}
+
+.contenviaje {
+  width: 70%;
+  height: 100%;
+  padding: 0px;
+}
+
+.contenFlexviaje {
+  display: flex;
+  width: 100%;
+  height: 25%;
+}
+
+.imgViaje {
+  width: 40%;
+  height: 100%;
+  margin: 0px 10px 0px 0px;
+}
+
+.IMGSViajes {
+  height: 100%;
+  width: 100%;
+}
+
+.textoViaje {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  overflow: auto;
+}
+
+.leerMas {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  margin: 5% 0px 0px 0px;
+}
+
+/*CONTENIDO 2 PARTE DERECHA*/
+.contenviaje2 {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+}
+
+.boxViaje2-1 {
+  height: 33%;
+  width: 100%;
+}
+
+#GATO {
+  width: 100%;
+  height: 100%;
+}
+
+.boxViaje2-2 {
+  display: inline-block;
+  height: 33%;
+  width: 100%;
+}
+
+.betweenBoxViaje2-2 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.BBV2-2Flex {
+  display: flex;
+  width: 100%;
+  height: 33.33%;
+}
+
+.IMGBBV2-2Flex {
+  width: 50%;
+  height: 100%;
+}
+
+.boxViaje2-3 {
+  height: 33%;
+  width: 100%;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  margin: 80px 0px 0px 0px;
+  background-color: black;
+  padding: 10%;
+}
+
+.espacioBlancoFooter {
+  width: 60%;
+  height: 100%;
+}
+
+.contenedorInscribeteF {
+  display: inline-block;
+  justify-content: stretch;
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  color: white;
+  font-size: 13px;
+}
+
+.inscribeteConten {
+  display: inline-flex;
+}
+
+.iconosF {
+  display: flex;
+  margin: 10px;
+}
+
+#emailF {
+  margin: 0;
+  border: solid white 1px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+#botonF {
+  margin: 0;
+  color: white;
+  background-color: rgba(52, 58, 64, 255);
+  border: solid 1px white;
+}
+/*stylos generales*/
+h4 {
+  color: #61aeff;
+  font-size: 25px;
+}
+
+p {
+  color: black;
+  margin: 0;
+  overflow: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #41aaff;
+}
+
+hr {
+  color: #79ff39;
+  background-color: #79ff39;
+  height: 1px;
+  margin: 10;
+  padding: 0;
+}
+
+/* Nuevas reglas para hacer responsive */
+@media screen and (max-width: 768px) {
+  .contenviaje2 {
+    display: none; /* Oculta la parte derecha en dispositivos con pantalla de hasta 768px de ancho */
+  }
+}
+
+/* Contenido de la página 2 */
+.contenviaje {
+  width: 70%;
+  height: 100%;
+  padding: 0px;
+}
+
+/* Nuevas reglas para hacer responsive */
+@media screen and (max-width: 768px) {
+  .contenviaje {
+    width: 100%; /* Cambia el ancho al 100% en dispositivos con pantalla de hasta 768px de ancho */
+    padding: 0 20px; /* Añade un espacio de relleno a los lados para dispositivos con pantalla más estrecha */
+  }
+}
+
+/* Contenido de la página 2 parte derecha */
+.contenviaje2 {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+}
+
+/* Nuevas reglas para hacer responsive */
+@media screen and (min-width: 769px) {
+  .contenviaje2 {
+    display: inline-block; /* Restablece el valor de visualización en línea para dispositivos con pantalla más ancha que 768px */
+  }
+}

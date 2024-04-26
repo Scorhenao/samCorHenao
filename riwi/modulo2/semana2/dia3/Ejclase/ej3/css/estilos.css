@@ -1,0 +1,38 @@
+/* Estilos para el contenedor principal */
+div.contenedor {
+    background-color: rgb(67, 65, 65); /* Color de fondo */
+    color: aliceblue; /* Color del texto */
+    padding: 10px; /* Añadido para espaciado interno */
+    text-align: left; /* Alinear texto al centro */
+}
+
+/* Estilos para el contenedor de enlaces */
+div.contenedorA {
+    display: flex; /* Activar flexbox */
+    justify-content: center; /* Alinear elementos al centro horizontalmente */
+    flex-wrap: wrap; /* Permitir que los enlaces se envuelvan en múltiples líneas */
+    background-color: gray;
+}
+
+/* Estilos para los enlaces */
+div.contenedorA > a {
+    color: blanchedalmond; /* Color del texto */
+    margin: 5px; /* Espaciado entre enlaces */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+   
+}
+
+/* Estilos para los enlaces cuando se pasa el ratón por encima */
+div.contenedorA > a:hover {
+    background-color: rgb(38, 36, 36); /* Color de fondo al pasar el ratón */
+}
+
+/* Media query para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    div.contenedorA {
+        flex-direction: column; /* Cambiar a dirección de columna en pantallas pequeñas */
+        align-items: center; /* Alinear elementos al centro verticalmente */
+    }
+}

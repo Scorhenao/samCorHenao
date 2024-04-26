@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de datos personales</h1>
+    </header>
+
+    <!--
+    name: nombrar formulario
+    action: url de backend
+    method: get se muestra en el back post no se muestra
+    target: como se visualiza el formulario
+    accept: obliga a codificar informacion
+    autocomplete: autocomopletar input
+    novalitdata: validar datos
+    accept-charset: caracteres especiales   en la formulario
+    fieldset: siempre al inicio y a lo ultimo dlel formulario
+    legend: titulo del formulario
+    for del label: presiona indica el formulario
+    max: en input pone un maximo de numero
+    min: en input pone un minimo de numero
+    placeholder: textos dentro de input
+    value: validation de datos
+-->
+    <section>
+    <form action="/datos" method="get" name="formulario" target="_blank" accept-charset="utf-8">
+        <fieldset>
+            <!--Dato de solo lectura con valor preestablecido-->
+
+            <legend>Datos personales</legend>
+
+            <label for="idPersona">Id Persona:</label>
+            <input type="text" id="idPersona" name="idPersona" readonly="true" value="100">
+        <br>
+
+            <label for="sistema">Dato oculto</label>
+            <input type="hidden" name="sistema" id="sistema" value="SAP">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" autocomplete="off" />
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" />
+        <br />
+
+            <label for="fechaIngreso">Fecha de ingreso:</label>
+          <input type="date" name="fechaIngreso" id="fechaIndreso" />
+
+          <label for="email">Correo:</label>
+          <input type="email" name="email" id="email" />
+          <br />
+          <fieldset>
+            <legend>Sexo</legend>
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" id="sexo" />
+            <br />
+            <!--deben tener el mismo name para que elija 1 solo-->
+            <label for="">Femenino</label>
+            <input type="radio" name="sexo" id="sexo" />
+          </fieldset>
+
+          <label for="">Hobbies</label>
+          <br />
+          <label for="leer">Leer</label>
+          <input type="checkbox" name="leer" id="leer" />
+
+          <label for="cine">Cine</label>
+          <input type="checkbox" name="cine" id="cine" />
+
+          <label for="deportes">Deportes</label>
+          <input type="checkbox" name="deportes" id="deportes" />
+          <br />
+
+          <label for="archivo">Archivo</label>
+          <input type="file" name="archivo" id="archivo" />
+          <br />
+
+          <label for="">Pais</label>
+          <select name="pais" id="pais">
+            <option value="colombia">Colombia</option>
+            <option value="ecuador">Ecuador</option><!--de a uno a la vez-->
+            <option value="panama">Panama</option>
+          </select>
+          <br/>
+
+
+          <label for="">Paises</label>
+          <br>
+          <select name="paises" id="paises" multiple=>
+            <option value="colombias">Colombias</option>
+            <option value="ecuadors">Ecuadors</option><!--varias opciones-->
+            <option value="panamas" selected="true" >Panamas</option> <!--selected pone primero-->
+          </select>
+          <br>
+
+          <label for="direccion">Direccion:</label>
+          <input type="text" name="direccion" id="direccion" required>
+          <br>
+
+          <label for="">Comentarios:</label>
+          <br>
+          <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+          <br>
+
+          <label for="password">Contraseña:</label>
+          <input type="password" name="password" id="password">
+          <br>
+
+          <input type="submit" value="enviar" />
+        <br>
+            <input type="submit" novalidate="true" value="Enviar sin validar">
+        <br>
+            <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+    </section>
+</body>
+</html>

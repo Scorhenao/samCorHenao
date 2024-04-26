@@ -1,0 +1,1 @@
+#Elabora un programa que solicite al usuario ingresar 7 números enteros y luego cuente cuántos de esos números son múltiplos de 5.

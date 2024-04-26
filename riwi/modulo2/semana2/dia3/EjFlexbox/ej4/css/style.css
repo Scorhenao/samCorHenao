@@ -1,0 +1,65 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;/* especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas. Si la cobertura (wrap) está permitida, esta propiedad también te permite controlar la dirección en la cual serán apilados los elementos*/
+    height: 60px;
+}
+
+.box {
+    flex: 1;
+    border: 1px solid black;
+    text-align: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+#box1 {
+    background-color: rgb(68, 178, 114);
+}
+
+#box2 {
+    background-color: rgb(22, 157, 202);
+}
+
+#box3 {
+    background-color: rgb(127, 30, 183);
+}
+
+#box4 {
+    background-color: rgb(51, 54, 58);
+}
+
+
+#box5 {
+    order: -4; /* Coloca el div 5 al principio */
+    background-color: rgb(230, 206, 26);
+}
+
+#box6 {
+    order: +4; /* Coloca el div 6 al final */
+    background-color: rgb(213, 106, 25);
+}
+
+#box7 {
+    background-color: rgb(218, 68, 45);
+}
+
+#box8 {
+    background-color: rgb(150, 166, 171);
+}
+
+#box9 {
+    background-color: rgb(32, 156, 65);
+}
+
+#box10 {
+    background-color: rgb(37, 159, 121);
+}
+
+h1{
+    color: white;
+    font-size: 150%;
+}

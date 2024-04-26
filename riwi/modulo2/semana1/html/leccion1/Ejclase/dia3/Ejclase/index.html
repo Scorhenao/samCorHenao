@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ej dia 3</title>
+    <link rel="stylesheet" href="../Ejclase/style.css" />
+</head>
+
+<body class="background-image">
+    <!-- nombre, apellido, tipo de sangre(escojer), edad, escolaridad, estado civil-->
+
+<h1 class="titulo" >Mini contacto</h1>
+    <form action="servidor-ejemplo.com" method="get">
+        <fieldset>
+        <legend class="texto">Contacto</legend>
+
+        <div class="form-control">
+            <label for="name" class="texto">Nombre:</label>
+            <input
+            type="name"
+            id="name"
+            placeholder="Introduce tu nombre"
+            required
+            />
+        </div>
+
+        <div class="form-control">
+            <label for="apellido" class="texto">Apellido:</label>
+            <input
+            type="text"
+            id="apellido"
+            placeholder="Introduce tu apellido"
+            required
+            />
+        </div>
+
+        <div class="form-control">
+            <label for="email" class="texto">Email</label>
+            <input
+            type="email"
+            id="email"
+            placeholder="Introduce tu Email"
+            required
+            />
+        </div>
+
+        <div>
+            <label for="" class="texto">Tipo de sangre: </label>
+            <select name="" id="">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label for="edad" class="texto">Edad:</label>
+            <input
+            type="number"
+            id="edad"
+            name="edad"
+            placeholder="Introduce tu edad"
+            required
+            />
+        </div>
+
+        <div class="form-control">
+            <label for="titulo" class="texto">Escolaridad:</label>
+            <input type="file" id="titulo" name="titulo" required />
+        </div>
+
+        <div class="form-control">
+            
+            <label for="" class="texto">Estado civil:</label>
+            <br />
+            <label for="casado" class="texto">Casado</label>
+            <input type="radio" name="estCivil" id="estCivil" required />
+
+            <label for="soltero" class="texto">Soltero</label>
+            <input type="radio" name="estCivil" id="estCivil" required/>
+
+            <label for="unionLibre" class="texto">Union libre</label>
+            <input type="radio" name="estCivil" id="estCivil" required/>
+
+            <label for="divorciado" class="texto">Divorciado</label>
+            <input type="radio" name="estCivil" id="estCivil" required/>
+
+            <label for="noDecir" class="texto">Prefiero no decir</label>
+            <input type="radio" name="estCivil" id="estCivil" required/>
+        </div>
+
+        <input type="submit" value="Enviar" class="submit-btn" />
+        <input type="reset" class="submit-btn" value="restablecer">
+        </fieldset>
+    </form>
+</body>
+</html>

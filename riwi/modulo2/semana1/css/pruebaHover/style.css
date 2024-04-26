@@ -1,0 +1,62 @@
+.MenuHaciaAbajo {
+    position: relative;
+    display: inline-block;
+}
+
+.botonHaciaAbajo {
+    background-color: rgb(29, 131, 209);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer; /*Para cambiar el cursor cuando pasa por encima*/
+}
+
+.contenidoHaciaAbajo{
+    display: none;
+    position:absolute; /*Para que al desplegar el menu, los elementos que se encuentren debajo no se muevan, sino que se oculten debajo del menu*/
+    background-color: rgb(147, 226, 226);
+    min-width: 170px;
+    box-shadow: 0px 6px 10px rgb(183, 183, 183);
+}
+
+.contenidoHaciaAbajo a {
+    color: black;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    background-color: blue;
+}
+
+
+.contenidoHaciaAbajo a:hover {
+    background-color: rgb(28, 222, 203);
+}
+
+.MenuHaciaAbajo:hover .botonHaciaAbajo {
+    background-color: rgb(255, 0, 132);
+}
+
+.MenuHaciaAbajo:hover .contenidoHaciaAbajo {
+    display: block;
+}
+
+
+/*Boton con color al pasar el mouse*/
+
+section.prueba a{
+    float: left;
+    padding: 10px 20px;
+    background-color: #9a7c5d; /* Naranja suave para los botones */
+    color: #fc0000;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-inline-end: 100px;
+    
+}
+
+section.prueba a:hover{
+    background-color: aqua;
+}
+

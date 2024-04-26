@@ -1,0 +1,64 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+div.contenedor{
+    border: solid 4px red;
+    height: 100%;
+    display: flex; /*activa el flexbox*/
+    flex-direction:column-reverse; /*invierte el contenido de los elementos*/
+    justify-content: flex-end;/*acomoda los elementos al inicio de la pagina*/
+}
+
+.divs{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+#div1{
+    background-color: rgb(32, 177, 97);
+    height: 10%;
+}
+
+#div2{
+    background-color: rgb(32, 119, 177);
+    height: 10%;
+}
+
+#div3{
+    background-color: rgb(131, 32, 177);
+    height: 10%;
+}
+
+#div4{
+    background-color: rgb(39, 38, 41);
+    height: 10%;
+}
+#div5{
+    background-color: yellow;
+    height: 10%;
+}
+#div6{
+    background-color: orange;
+    height: 10%;
+}
+#div7{
+    background-color: red;
+    height: 10%;
+}
+#div8{
+    background-color: gray;
+    height: 10%;
+}
+#div9{
+    background-color: lightgreen;
+    height: 10%;
+
+}
+#div10{
+    background-color: lightseagreen;
+    height: 10%;
+}

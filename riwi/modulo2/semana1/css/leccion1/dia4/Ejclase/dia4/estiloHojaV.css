@@ -1,0 +1,22 @@
+.imgMia {
+    border-radius: 25px;
+    height: 280px;
+    width: 330px;
+    float: right
+}
+
+h2 {
+    color: #353271
+}
+
+h1 {
+    color: #353271
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.aqui{
+    border-bottom: #353271;
+}

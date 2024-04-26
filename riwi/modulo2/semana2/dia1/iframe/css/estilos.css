@@ -1,0 +1,71 @@
+.titulo {
+    color: aquamarine;
+    background-color: darkcyan;
+    text-align: center;
+    /*poner todo texto en mayuscula*/
+    text-transform: uppercase;
+}
+
+
+/*/* Keyword values */
+/*transform: none;
+
+/* Function values */
+/*transform: matrix(1, 2, 3, 4, 5, 6);
+transform: translate(12px, 50%);
+transform: translateX(2em);
+transform: translateY(3in);
+transform: scale(2, 0.5);
+transform: scaleX(2);
+transform: scaleY(0.5);
+transform: rotate(0.5turn);
+transform: skew(30deg, 20deg);
+transform: skewX(30deg);
+transform: skewY(1.07rad);
+transform: matrix3d(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16);
+transform: translate3d(12px, 50%, 3em);
+transform: translateZ(2px);
+transform: scale3d(2.5, 1.2, 0.3);
+transform: scaleZ(0.3);
+transform: rotate3d(1, 2, 3, 10deg);
+transform: rotateX(10deg);
+transform: rotateY(10deg);
+transform: rotateZ(10deg);
+transform: perspective(17px);
+
+/* Multiple function values */
+/*transform: translateX(10px) rotate(10deg) translateY(5px);
+
+/* Global values */
+/*transform: inherit;
+transform: initial;
+transform: unset;
+
+*/
+
+
+.marco {
+    width: 100%;
+    height: 400px;
+    border: 1px solid darkcyan;
+}
+
+.boton {
+    background-color: aquamarine;
+    border: 2px solid darkcyan;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background-color: darkseagreen;
+    color: bisque;
+    text-transform: uppercase;
+    zoom: 200%;/*aumentar objeto*/
+}
+
+.centrar {
+    text-align: center;
+}

@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: rgb(238, 121,108);
+    background-color:rgb(237, 194, 209) ;
+}
+
+.contenedor{
+    width: 80%;
+    height: 20%;
+    overflow: auto;/*scroll a lo que se necesita, solo aplica si supera el tamaño especificado*/
+    /*overflow: scroll;/*scroll horizontal y vertical*/
+    margin: auto;/*centra*/
+    border: dashed rgb(245, 229, 223);/*espaciecitos*/
+}
+
+span{
+    font-weight: bolder;/*negrilla*/
+    font-style: italic;/*cursiva*/
+    font-size: large;
+    background-color: rgb(209, 245, 209);
+    border: 1px solid aquamarine;
+    height: 50px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.menu{
+    list-style: none;/*Le quita el estilo de viñeta a la lista*/
+    text-align: center;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(173, 255, 247);
+    border-radius: 5px;
+
+}
+
+a{
+    text-decoration: none;
+    color: forestgreen;
+}
+

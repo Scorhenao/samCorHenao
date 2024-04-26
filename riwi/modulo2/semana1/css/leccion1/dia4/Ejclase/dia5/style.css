@@ -1,0 +1,44 @@
+.selection {
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.291);
+}
+.colorsito{
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.291);
+    width: 40px;
+}
+
+.tabla{
+    border-radius: 6px;
+    background-color: aliceblue;
+    border-color: gray solid 4px;
+}
+
+.casilla1 {
+    background-color: rgb(68, 114, 196);
+
+}
+
+.casilla2 {
+    background-color: rgb(68, 114, 196);
+
+}
+
+.casilla3 {
+    background-color: rgb(68, 114, 196);
+
+}
+
+.casilla4 {
+    background-color: rgb(68, 114, 196);
+
+}
+
+.peso {
+    background-color: rgb(217,226,243);
+}
+
+.altura {
+    background-color: rgb(217,226,243);
+}
+

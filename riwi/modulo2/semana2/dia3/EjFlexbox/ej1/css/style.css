@@ -1,0 +1,114 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;/*usar el maximo de la pagina en altura, sin poner extras alrrededor*/
+}
+
+div.contenedor{
+    border: solid 4px red;
+    display: flex; /*ativa el flexbox*/
+    flex-direction: column;
+    flex-wrap: wrap;/*estira los items a ocupar espacio del contenedor*/
+    height: 100%;
+    align-content: flex-start;/*todo dentro del contenedor se ponga al principio o al final*/
+}
+
+#div1{
+    background-color: rgb(32, 177, 97);
+    font-size: 40px;/*tamaño de letra*/
+    color: white;
+    display: inline;/*la forma en la que se va a poner: incline es hacia abajo*/
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div2{
+    background-color: rgb(32, 119, 177);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div3{
+    background-color: rgb(131, 32, 177);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div4{
+    background-color: rgb(48, 58, 52);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div5{
+    background-color: rgb(221, 201, 16);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;  text-align: center;
+}
+
+#div6{
+    background-color: rgb(224, 109, 14);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+
+}
+
+#div7{
+    background-color: rgb(233, 54, 0);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div8{
+    background-color: rgb(171, 175, 173);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div9{
+    background-color: rgb(29, 212, 112);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
+
+#div10{
+    background-color: rgb(34, 122, 74);
+    font-size: 40px;
+    color: white;
+    display: inline;
+    height: 100%;
+    width: 5%;
+    text-align: center;
+}
