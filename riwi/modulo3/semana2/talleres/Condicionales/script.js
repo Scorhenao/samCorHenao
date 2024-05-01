@@ -339,8 +339,23 @@ las letras del alfabeto).  */
 
 /* 28. Determina si una hora está en el rango de 9 AM a 6 PM.  */
 
+    // PRACTICANDO CON ALERTS
+    // let Horario = String(prompt("digite una hora en AM o PM: ")).toUpperCase()
+    // let Hour = parseInt(prompt("digite una hora: "));
+    
+    // if (Horario === "AM" && Hour >= 9 && Hour <=12) {
+    //     alert("La hora SI esta en un rango entre 9AM Y 6PM")
+    // }
+    // else if (Horario === "PM" && Hour >= 1 && Hour <=6) {
+    //     alert("La hora SI esta en un rango entre 9AM Y 6PM")
+    // }
+    // else{
+    //     alert("No esta en rango")
+    // }
+
+    //SIN ALERTS BASICO
     function isHourInRange(hora) {
-        if (hora >= 9 && hora <= 21) {
+        if (hora >= 9 && hora <= 18) {
             return true;
         } else {
             return false;
