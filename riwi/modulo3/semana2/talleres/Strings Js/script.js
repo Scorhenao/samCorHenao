@@ -1,3 +1,10 @@
+/* 
+    Samuel Cordoba Henao
+    clan = Jeff Bezzos
+    correo = Samcorhenao@gmail.com 
+*/
+
+
 /*1. Declara dos variables, num1 y num2, asignándoles valores numéricos diferentes y muestra en consola el resultado de sumarlos. */
 let num1 = 10;
 let num2 = 20;

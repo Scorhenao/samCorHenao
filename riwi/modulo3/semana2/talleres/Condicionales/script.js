@@ -1,3 +1,10 @@
+/* 
+    Samuel Cordoba Henao
+    clan = Jeff Bezzos
+    correo = Samcorhenao@gmail.com 
+*/
+
+
 /* 1. Verifica si un número es positivo.  */
 /* 2. Verifica si un número es negativo.  */
 

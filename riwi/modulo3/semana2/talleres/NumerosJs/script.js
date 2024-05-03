@@ -1,3 +1,10 @@
+/* 
+    Samuel Cordoba Henao
+    clan = Jeff Bezzos
+    correo = Samcorhenao@gmail.com 
+*/
+
+
 /* 1. Número a un nuevo número: Declara una variable num con un valor numérico y luego crea una nueva variable llamada newNum utilizando la función Number() 
 para convertir num a un nuevo número. Muestra en consola newNum.  */
 
@@ -353,23 +360,35 @@ console.log(`elevarla a una potencia específica: ${y **= 2}`);
 /* 52. Operadores unarios Incremento: Declara una variable numérica y utiliza el operador ++ para incrementar su valor en 1. Muestra el resultado en consola. 
  */
 
-/* 53. Operadores unarios Decremento: Declara una variable numérica y utiliza el 
-operador -- para decrementar su valor en 1. Muestra el resultado en consola. 
+let numIncrease = ++num;
+
+console.log(`utilizando el operador ++ para incrementar su valor en 1: ${numIncrease}`);
+
+/* 53. Operadores unarios Decremento: Declara una variable numérica y utiliza el operador -- para decrementar su valor en 1. Muestra el resultado en consola. 
+ */
+let numDecrease = --num;
+
+console.log(`utilizando el operador -- para decrementar su valor en 1: ${numDecrease}`);
+
+/* 54. Operadores unarios Incremento previo: Declara una variable num con un valor numérico. Utiliza el operador unario de incremento previo (++num) para aumentar el valor de num en 1 antes de asignarlo a la variable result. Muestra el nuevo valor de result en la consola. 
  */
 
-/* 54. Operadores unarios Incremento previo: Declara una variable num con un valor 
-numérico. Utiliza el operador unario de incremento previo (++num) para 
-aumentar el valor de num en 1 antes de asignarlo a la variable result. Muestra el 
-nuevo valor de result en la consola. 
- */
+let result;
 
-/* 55. Operadores unarios Decremento previo: Declara una variable num con un valor 
-numérico. Utiliza el operador unario de decremento previo (--num) para disminuir 
-el valor de num en 1 antes de asignarlo a la variable result. Muestra el nuevo 
+result = ++num;
+console.log(`utilizando el operador ++ para incrementar su valor en 1 con variable resul: ${result}`);
+
+/* 55. Operadores unarios Decremento previo: Declara una variable num con un valor numérico. Utiliza el operador unario de decremento previo (--num) para disminuir el valor de num en 1 antes de asignarlo a la variable result. Muestra el nuevo 
 valor de result en la consola. 
  */
 
-/* 56. Operadores unarios Resta unaria: Declara una variable num con un valor 
-numérico. Utiliza el operador unario de resta (-num) para obtener el opuesto numérico de num y asigna el resultado a la variable result. Muestra el valor 
+result = --num;
+console.log(`utilizando el operador -- para decrementar su valor en 1: ${result}`);
+
+
+/* 56. Operadores unarios Resta unaria: Declara una variable num con un valor numérico. Utiliza el operador unario de resta (-num) para obtener el opuesto numérico de num y asigna el resultado a la variable result. Muestra el valor 
 resultante en la consola. 
  */ 
+
+result = -num;
+console.log(`utilizando el operador - para obtener el opuesto numérico de num: ${result}`);
