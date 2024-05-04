@@ -79,17 +79,26 @@
             alert(`El producto ${dataToSearch} SI se encuentra en la lista!!!`);
             let positionProduct = array.indexOf(dataToSearch);
             alert(`Y su posicion en la lista es: ${positionProduct}`);
-            console.log(`El producto ${searchProduct} se encuentra en la lista`);
+            console.log(`El producto ${dataToSearch} se encuentra en la lista`);
         }
         else {
-            alert(`el producto ${dataToSearch} no se encuentra en la lista`);
-            console.log(`el producto ${dataToSearch} no se encuentra en la lista`);
+            alert(`El producto ${dataToSearch} no se encuentra en la lista`);
+            console.log(`El producto ${dataToSearch} no se encuentra en la lista`);
         }
         
     }
 
-    functionDelete = () =>{
-
+    functionDelete = (array,dataTodelete) =>{
+        if (array.includes(dataTodelete)) {
+            let positionProduct = array.indexOf(dataTodelete);
+            array.splice(positionProduct);
+            alert(`El producto ${dataTodelete} se ha eliminado de la lista!!!`);
+            console.log(`El producto ${dataTodelete} se ha eliminado de la lista`);
+        }
+        else{
+            alert(`El producto ${dataTodelete} no se encuentra en la lista`);
+            console.log(`El producto ${dataTodelete} no se encuentra en la lista`);
+        }
     }
     
     functionTotalShopping = () =>{
@@ -153,7 +162,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
         }
         
         //salir del bucle
-        let exit = String(prompt("Si quiere TERMINAR de agregar productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
+        let exit = String(prompt("Si quiere TERMINAR de AGREGAR productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
 
         if (exit === "fin" || exit === "salir") {
             break;
@@ -170,7 +179,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     }
     else if(search === "no"){
         //no quizo iniciar el programa
-        alert("Gracias por usar el programa si se equivoco y quiere volver a buscar digite 'volver'");
+        alert("Gracias por usar el programa si se equivoco y quiere volver a BUSCAR digite 'volver'");
         let back = String(prompt("si quiere volver a usarlo digite 'volver'")).toLowerCase();
     
         //quiere volver a usar el programa
@@ -195,7 +204,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
         }
 
         //salir del bucle
-        let exit = String(prompt("Si quiere TERMINAR de agregar productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
+        let exit = String(prompt("Si quiere TERMINAR de BUSCAR productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
 
         if (exit === "fin" || exit === "salir") {
             break;
@@ -204,30 +213,43 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     
 //-----------------------------------------------------------------------------------------------------------
     //eliminar productos WHILE
-    if(search === "no" ){
-        //eliminar productos
-        let deleteProduct = String(prompt("Si quiere ELIMINAR un producto digite 'si' sino digite 'no'")).toLowerCase();
-        if (deleteProduct === "si") {
-            let deleteProductName = String(prompt("Digite el nombre del producto que desea eliminar")).toLowerCase();
-            if (listShopping.includes(deleteProductName)) {
-                let positionProduct = listShopping.indexOf(deleteProductName);
-                listShopping.splice(positionProduct, 1);
-                alert(`El producto ${deleteProductName} se ha eliminado de la lista`);
-                console.log(`el producto ${deleteProductName} se ha eliminado de la lista`);
-            }
-            else{
-                alert
-            }
+    let deleteProduct = String(prompt("Si quiere ELIMINAR un producto digite 'si' sino digite 'no'")).toLowerCase();
+    //volver al bucle por posibles errores
+    //digito algo distinto a si o no
+    if (deleteProduct != "si" && deleteProduct != "no" ) {
+        alert("digitaste un valor no valido");
+    }
+    else if(deleteProduct === "no"){
+        //no quizo iniciar el programa
+        alert("Gracias por usar el programa si se equivoco y quiere volver a ELIMINAR digite 'volver'");
+        let back = String(prompt("si quiere volver a usarlo digite 'volver'")).toLowerCase();
+    
+        //quiere volver a usar el programa
+        if (back === "volver") {
+            deleteProduct = "si";
         }
-        else if(deleteProduct === "no"){
-            alert("gracias por usar nuestro programa")
-            }
         else{
             alert("digito un valor no valido");
         }
-
-    }
-    else{
-        alert("digito un valor no valido");
     }
 
+    while(deleteProduct === "si" && functionValidateData(deleteProduct) === true ){
+            //eliminar productos
+            let deleteProductName = String(prompt("Digite el nombre del producto que desea ELIMINAR")).toLowerCase();
+
+            if (functionValidateData(deleteProductName) === true) {
+                functionDelete(listShopping,deleteProductName);
+            }
+            else{
+                alert("digito un valor no valido para un producto");
+            }
+            
+            //salir del bucle
+            let exit = String(prompt("Si quiere TERMINAR de ELIMINAR productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
+
+            if (exit === "fin" || exit === "salir") {
+                break;
+            }
+        }
+
+    
