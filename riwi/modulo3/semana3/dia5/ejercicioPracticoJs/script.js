@@ -15,20 +15,20 @@
 
 // 3. Mostrar la lista de compras 
 // • Utiliza un ciclo for para recorrer el arreglo listaCompras. 
-// • Dentro del ciclo, muestra cada producto en la consola utilizando console.log(). 
+// • Dentro del ciclo, muestra cada producto en la consola utilizando console.log(). READY
 
 // 4. Buscar un producto 
 // • Pregunta al usuario qué producto busca en la lista. 
 // • Utiliza un ciclo for para buscar el producto en el arreglo listaCompras. 
 // • Si el producto se encuentra, muestra un mensaje indicando la posición en la lista. 
-// • Si el producto no se encuentra, muestra un mensaje indicando que no está en la lista. 
+// • Si el producto no se encuentra, muestra un mensaje indicando que no está en la lista. READY
 
 // 5. Eliminar un producto 
 // • Pregunta al usuario qué producto quiere eliminar de la lista. 
 // • Utiliza un ciclo for para buscar el producto en el arreglo listaCompras. 
 // • Si el producto se encuentra, elimina el elemento del arreglo utilizando el método splice(). 
 // • Muestra un mensaje indicando que el producto ha sido eliminado. 
-// • Si el producto no se encuentra, muestra un mensaje indicando que no está en la lista. 
+// • Si el producto no se encuentra, muestra un mensaje indicando que no está en la lista. READY
 
 // 6. Calcular el total de la compra 
 // • Supón que cada producto tiene un precio asociado. 
@@ -101,8 +101,18 @@
         }
     }
     
-    functionTotalShopping = () =>{
+    functionTotalShopping = (array,object) =>{
+        
+        for (let i = 0; i < array.length; i++) {
+            const productsValue = array[i];
+        }
 
+        if (array.includes(productsValue)) {
+            let sum = 0;
+            for (let key in object) {
+                sum += productsValue[key];
+            }
+        }
     }
 
     functionValidateData = (dataTovalidate) =>{
@@ -124,6 +134,13 @@
 
 let nameList =["Lista de Compras Semanal"];
 let listShopping =[];
+let  preciosProductos = {
+        papitas:3.000,
+        mondongo:10.000,
+        manzana: 1.500,
+        leche: 3.300,
+        pan: 2.900 
+    }
 
 //-----------------------------------------------------------------------------------------------------------
 //agregar y ver productos WHILE
@@ -136,7 +153,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     else if(start === "no"){
         //no quizo iniciar el programa
         alert("Gracias por usar el programa");
-        let back = String(prompt("si quiere volver a usarlo digite 'volver'")).toLowerCase();
+        let back = String(prompt("si quiere volver a usarlo digite 'volver' sino digite")).toLowerCase();
     
         //quiere volver a usar el programa
         if (back === "volver") {
@@ -180,11 +197,14 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     else if(search === "no"){
         //no quizo iniciar el programa
         alert("Gracias por usar el programa si se equivoco y quiere volver a BUSCAR digite 'volver'");
-        let back = String(prompt("si quiere volver a usarlo digite 'volver'")).toLowerCase();
+        let back = String(prompt("si quiere volver a BUSCAR digite 'volver' sino digite 'No' ")).toLowerCase();
     
         //quiere volver a usar el programa
         if (back === "volver") {
             search = "si";
+        }
+        else if(back === "no"){
+            let goToDelete =true;
         }
         else{
             alert("digito un valor no valido");
@@ -222,18 +242,21 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     else if(deleteProduct === "no"){
         //no quizo iniciar el programa
         alert("Gracias por usar el programa si se equivoco y quiere volver a ELIMINAR digite 'volver'");
-        let back = String(prompt("si quiere volver a usarlo digite 'volver'")).toLowerCase();
+        let back = String(prompt("si quiere volver a ELIMINAR digite 'volver' sino digite 'No'")).toLowerCase();
     
         //quiere volver a usar el programa
         if (back === "volver") {
             deleteProduct = "si";
+        }
+        else if(back === "no"){
+            let goToTotalPrice = true;
         }
         else{
             alert("digito un valor no valido");
         }
     }
 
-    while(deleteProduct === "si" && functionValidateData(deleteProduct) === true ){
+    while(deleteProduct === "si" || goToDelete === true && functionValidateData(deleteProduct) === true ){
             //eliminar productos
             let deleteProductName = String(prompt("Digite el nombre del producto que desea ELIMINAR")).toLowerCase();
 
@@ -252,4 +275,8 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
             }
         }
 
-    
+//-----------------------------------------------------------------------------------------------------------
+    //precio productos WHILE
+    if (goToTotalPrice === true) {
+        alert(`El total de su compra es: ${functionTotalShopping(listShopping,preciosProductos)}`)
+    }
