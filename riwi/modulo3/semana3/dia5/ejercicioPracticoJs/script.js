@@ -65,7 +65,7 @@
         //mostrar productos ingresados
         for (let i = 0; i < array.length; i++) {
             const products = array[i];
-            alert(`has ingresado: ${products}`)
+            alert(`has ingresado: ${products} exitosamente!`)
             //ordenar la lista de productos
             let count = counter += 1;
             console.log(`producto: ${count} ${products} `)
@@ -101,18 +101,17 @@
         }
     }
     
-    functionTotalShopping = (array,object) =>{
-        
-        for (let i = 0; i < array.length; i++) {
-            const productsValue = array[i];
+    functionTotalShopping = (array,price) =>{
+        let total = 0;
+        for (let producto of array) {
+            total += price[producto];
         }
+        console.log(`El total de la compra es: ${total}`);
+        let iva = total * 0.19;
+        console.log(`El total de la compra con IVA es: $${total + iva}`);
 
-        if (array.includes(productsValue)) {
-            let sum = 0;
-            for (let key in object) {
-                sum += productsValue[key];
-            }
-        }
+        alert(`El total de su compra es: ${total}`)
+        alert(`El total de su compra con IVA es: ${total + iva}`)
     }
 
     functionValidateData = (dataTovalidate) =>{
@@ -132,11 +131,15 @@
 
     }
 
+    function convertUnids(unidades) {
+        return unidades * 0.453592;
+    }
+
 let nameList =["Lista de Compras Semanal"];
 let listShopping =[];
-let  preciosProductos = {
-        papitas:3.000,
-        mondongo:10.000,
+let  priceProducts = {
+        papitas: 3.000,
+        mondongo: 10.000,
         manzana: 1.500,
         leche: 3.300,
         pan: 2.900 
@@ -153,11 +156,15 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     else if(start === "no"){
         //no quizo iniciar el programa
         alert("Gracias por usar el programa");
-        let back = String(prompt("si quiere volver a usarlo digite 'volver' sino digite")).toLowerCase();
+        let back = String(prompt("si quiere volver a usarlo digite 'volver' sino digite 'F'")).toLowerCase();
     
         //quiere volver a usar el programa
         if (back === "volver") {
             start = "si";
+        }
+        else if(back === "f"){
+            //salir del programa
+            alert("Gracias por usar el programa!!!");
         }
         else{
             alert("digito un valor no valido");
@@ -204,7 +211,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
             search = "si";
         }
         else if(back === "no"){
-            let goToDelete =true;
+            let goToDelete = true;
         }
         else{
             alert("digito un valor no valido");
@@ -276,7 +283,22 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
         }
 
 //-----------------------------------------------------------------------------------------------------------
+    //ordenar lista
+    listShopping.sort();
+    console.log('Lista de compras ordenada:');
+    console.log(listShopping);
     //precio productos WHILE
-    if (goToTotalPrice === true) {
-        alert(`El total de su compra es: ${functionTotalShopping(listShopping,preciosProductos)}`)
+    if (listShopping.length === 0) {
+        alert("Nose como pero no pusiste ningun producto RATON!")
+        console.log(listShopping.length)
     }
+    else{
+        functionTotalShopping(listShopping,priceProducts)
+    }
+    
+    if(goToTotalPrice === true){
+        
+        alert(`El total de su compra es: ${functionTotalShopping(listShopping,priceProducts)}`)
+
+    }
+    
