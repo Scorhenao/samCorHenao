@@ -61,14 +61,13 @@
     }
 
     functionShow = (array) =>{
-        let counter = 0;
+
         //mostrar productos ingresados
         for (let i = 0; i < array.length; i++) {
             const products = array[i];
             alert(`has ingresado: ${products} exitosamente!`)
             //ordenar la lista de productos
-            let count = counter += 1;
-            console.log(`producto: ${count} ${products} `)
+            console.log(`producto: ${products} `)
         }
 
     }
@@ -91,7 +90,7 @@
     functionDelete = (array,dataTodelete) =>{
         if (array.includes(dataTodelete)) {
             let positionProduct = array.indexOf(dataTodelete);
-            array.splice(positionProduct);
+            array.splice(positionProduct, 1);
             alert(`El producto ${dataTodelete} se ha eliminado de la lista!!!`);
             console.log(`El producto ${dataTodelete} se ha eliminado de la lista`);
         }
@@ -106,16 +105,19 @@
         for (let producto of array) {
             total += price[producto];
         }
-        console.log(`El total de la compra es: ${total}`);
         let iva = total * 0.19;
-        console.log(`El total de la compra con IVA es: $${total + iva}`);
+        let totalIva = total + iva;
 
-        alert(`El total de su compra es: ${total}`)
-        alert(`El total de su compra con IVA es: ${total + iva}`)
+        console.log(`El total de la compra es: ${functionUnitsNumbers(total)}`);
+        console.log(`El total de la compra con IVA es: ${functionUnitsNumbers(totalIva)}`);
+
+        alert(`El total de su compra es: ${functionUnitsNumbers(total)}`)
+        alert(`El total de su compra con IVA es: ${functionUnitsNumbers(totalIva)}`)
     }
 
     functionValidateData = (dataTovalidate) =>{
-        if (dataTovalidate != undefined && dataTovalidate != null && dataTovalidate != Number()) {
+        if (dataTovalidate != undefined && dataTovalidate != null && isNaN(dataTovalidate) != false) 
+        {
             return true;
         }
         else{
@@ -123,27 +125,47 @@
         }
     }
 
-    functionUnits = () =>{
-
+    functionUnitsNumbers = (unit) =>{
+        let result = unit.toPrecision(5);
+        return result;
     }
 
-    functionOrderList = () =>{
-
+    function poundsToKilograms(pounds) {
+        return pounds * 0.453592; // 1 pound is approximately 0.453592 kilograms
     }
 
-    function convertUnids(unidades) {
-        return unidades * 0.453592;
+    functionOrderList = (array) =>{
+        let arraySort = array.sort()
+        let counter = 0;
+        //mostrar productos ingresados
+        for (let i = 0; i < arraySort.length; i++) {
+            const products = arraySort[i];
+            //ordenar la lista de productos
+            let count = counter += 1;
+            console.log(`producto: ${count} ${products} `)
+        }
     }
+
 
 let nameList =["Lista de Compras Semanal"];
 let listShopping =[];
-let  priceProducts = {
+let  priceProducts ={
         papitas: 3.000,
         mondongo: 10.000,
         manzana: 1.500,
         leche: 3.300,
-        pan: 2.900 
+        pan: 2.900,
+        Carne: 6.000,
     }
+
+// let  priceProducts ={
+//         papitas: { precio: 3.000, unidad: "unidad" },
+//         mondongo: { precio: 10.000, unidad: "unidad"},
+//         manzana: { precio: 1.500, unidad: "lb" },
+//         leche: { precio: 3.300, unidad: "lt" },
+//         pan: { precio: 2.900, unidad: "unidad" },
+//         Carne: { precio: 6.000, unidad: "lb" }
+//     }
 
 //-----------------------------------------------------------------------------------------------------------
 //agregar y ver productos WHILE
@@ -175,6 +197,17 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
         //agregar productos
         let nameProduct = String(prompt("Digite el nombre del producto que desea agregar a la lista")).toLowerCase();
 
+        //lista de productos en lb
+        // if (priceProducts.nameProduct.unidad === "lb") {
+        //     listShopping.forEach(productoLb => {
+        //         //elimine el precio del producto normal
+        //         let positionProduct = listShopping.indexOf(nameProduct);
+        //         listShopping.splice(positionProduct, 1);
+        //         //agrege el precio del producto modificado con el conversor de unidades
+        //         listShopping.push()
+        //     });
+        // }
+
         if (functionValidateData(nameProduct) === true) {
             //funcion agregar productos
             functionAdd(listShopping,nameProduct);
@@ -184,6 +217,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
         else{
             alert("digito un valor no valido para un producto");
         }
+
         
         //salir del bucle
         let exit = String(prompt("Si quiere TERMINAR de AGREGAR productos digite 'fin' o 'salir' sino digite cualquier cosa")).toLowerCase();
@@ -194,6 +228,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     }
 
 //-----------------------------------------------------------------------------------------------------------
+let goToDelete = false;
     //buscar productos WHILE
     let search = String(prompt("Si quiere BUSCAR un producto digite 'si' sino digite 'no'")).toLowerCase();
     //volver al bucle por posibles errores
@@ -239,6 +274,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
     }
     
 //-----------------------------------------------------------------------------------------------------------
+let goToTotalPrice = false;
     //eliminar productos WHILE
     let deleteProduct = String(prompt("Si quiere ELIMINAR un producto digite 'si' sino digite 'no'")).toLowerCase();
     //volver al bucle por posibles errores
@@ -256,6 +292,7 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
             deleteProduct = "si";
         }
         else if(back === "no"){
+            let goToDelete = false;
             let goToTotalPrice = true;
         }
         else{
@@ -284,21 +321,18 @@ let start = String(prompt("Digite 'Si' si quiere iniciar el programa o 'No' si n
 
 //-----------------------------------------------------------------------------------------------------------
     //ordenar lista
-    listShopping.sort();
     console.log('Lista de compras ordenada:');
-    console.log(listShopping);
+    functionOrderList(listShopping);
     //precio productos WHILE
     if (listShopping.length === 0) {
         alert("Nose como pero no pusiste ningun producto RATON!")
         console.log(listShopping.length)
     }
+    else if(goToTotalPrice === true){
+        alert(`El total de su compra es: ${functionTotalShopping(listShopping,priceProducts)}`)
+    }
     else{
         functionTotalShopping(listShopping,priceProducts)
     }
     
-    if(goToTotalPrice === true){
-        
-        alert(`El total de su compra es: ${functionTotalShopping(listShopping,priceProducts)}`)
 
-    }
-    
