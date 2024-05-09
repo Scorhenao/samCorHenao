@@ -1,0 +1,23 @@
+.elementoPrincipal{
+    border: 10px solid black;
+    border-radius: 8px;
+}
+
+.elementoSecundario{
+    padding: 50px;
+    background-color: aqua;
+}
+
+.elementoPrincipal2 {
+    border: 10px ridge red;
+    border-radius: 2px;
+}
+
+.elementoSecundario2 {
+    padding: 40px;
+    background-color: blue;
+}
+
+p{
+    font-size: large;
+}
