@@ -1,0 +1,1 @@
+CREATE DATABASE BASEBASICADEDATOS;/*Crear base de datos*/
