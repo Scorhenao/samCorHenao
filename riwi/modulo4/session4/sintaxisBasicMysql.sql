@@ -25,3 +25,14 @@ DELETE FROM MOTOS WHERE id =2;
 UPDATE `MOTOS`
 SET nombre= "NKD"
 WHERE id = 1;
+
+/*borrar base de datos*/
+DROP DATABASE BASEBASICADEDATOS;
+
+/*borrar tabla*/
+DROP TABLE ACTOR
+DROP TABLE MOTOS
+
+/*modificar tabla*/
+ALTER TABLE ACTOR
+ADD COLUMN apellido VARCHAR(100);
