@@ -83,3 +83,18 @@ INNER JOIN TIPO_DOCUMENTO ON `PACIENTES`.ID_TIPO_DOCUMENTO = `TIPO_DOCUMENTO`.ID
 
 /*saber cantidad de id pacientes o ids en una tabla*/
 SELECT COUNT(*) FROM TIPO_DOCUMENTO;
+
+/*Como insertar datos a un interval y lo que retorna*/
+-- Crear una tabla usando interval para TiempoDeEstadia
+CREATE TABLE Estadias (
+    Id serial PRIMARY KEY,
+    TiempoDeEstadia interval
+);
+
+-- Insertar datos
+INSERT INTO Estadias (TiempoDeEstadia) VALUES
+    ('2 hours 30 minutes'),
+    ('1 day 5 hours 20 minutes');
+
+-- Consulta para obtener datos
+SELECT * FROM Estadias;
