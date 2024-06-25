@@ -1,0 +1,24 @@
+Bases de datos de documentos
+Almacena datos en documentos similares a los (JSON)
+
+Ejemplos: MongoDB,couchDB
+
+USO: aplicaciones con datos semi estructurados donde se necesita flexibilidad en el esquema
+
+Ventajas:
+- Flexibilidad en el esquema
+- Escalabilidad horizontal
+- Alta performance en lecturas y escrituras
+
+Desventajas:
+- No hay un lenguaje de consulta estándar
+- No hay soporte para transacciones ACID
+- No hay soporte para joins
+- No hay soporte para constraints
+
+MongoDB
+sistema de base de datos NoSQL
+
+Primera coneccion RIWI2 
+usuario: samcorhenao
+password: rumsbcMclys3C424 
