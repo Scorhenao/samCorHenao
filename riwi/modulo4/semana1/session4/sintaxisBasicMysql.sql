@@ -98,3 +98,9 @@ INSERT INTO Estadias (TiempoDeEstadia) VALUES
 
 -- Consulta para obtener datos
 SELECT * FROM Estadias;
+
+-- Consulta desde una tabla segun su fk toda la informacion de la fk
+SELECT CAMAS.ID_cama, PACIENTES.Nombre, PACIENTES.Apellidos
+FROM CAMAS
+JOIN PACIENTES ON CAMAS.ID_paciente_FK = PACIENTES.ID_paciente;
+
