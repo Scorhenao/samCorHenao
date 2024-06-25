@@ -15,10 +15,28 @@ Desventajas:
 - No hay soporte para transacciones ACID
 - No hay soporte para joins
 - No hay soporte para constraints
+- No hay normalizacion
 
 MongoDB
 sistema de base de datos NoSQL
 
 Primera coneccion RIWI2 
+mongodb+srv://samcorhenao:<password>@cluster0.9no5wly.mongodb.net/
 usuario: samcorhenao
 password: rumsbcMclys3C424 
+
+db.peliculas.find() = show
+db.users.find({ city: "New York" });
+
+db.pelicualas.insertOne({ name: "John", age: 30, city: "New York" }); = insert or create
+
+db.users.updateOne({ name: "John" }, { $set: { age: 31 } });
+db.users.updateMany({ city: "New York" }, { $set: { status: "active" } }); = update
+
+db.users.deleteOne({ name: "John" });
+db.users.deleteMany({ status: "inactive" }); = delete
+
+
+
+
+db.peliculas.countDocuments() = couter
