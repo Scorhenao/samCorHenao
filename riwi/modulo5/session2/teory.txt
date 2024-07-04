@@ -1,0 +1,20 @@
+PROGRAMACION ORIENTADA A OBJETOS JAVASCRIPT
+
+class es la manera de javascript de declarar un objeto, dentro de este se pueden crear instancias 
+que es sacar una copia de lo que hay dentro del objeto para agregar otro atributo o acceder a un metodo del objeto
+
+console.log(myVar)
+let myVar = "helloworld"
+
+Error porque inicializa la variable pero no puede acceder a este atributo ya que javascript lee primero funciones,
+variables, constructores y etc. Esto es causado por el temporal dead zone.
+
+promesas gracias al event loop hacen consultas asicronas
+
+console.time()
+//codigo a medir en tiempo
+console.timeEnd()
+
+throw new Error lanza el error desde donde empezo en el proceso asincronico
+
+dentro del async await se usa un try con catch para controlar el error que puede dar la promesa
