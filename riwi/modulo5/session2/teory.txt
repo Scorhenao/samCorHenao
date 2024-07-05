@@ -9,7 +9,7 @@ let myVar = "helloworld"
 Error porque inicializa la variable pero no puede acceder a este atributo ya que javascript lee primero funciones,
 variables, constructores y etc. Esto es causado por el temporal dead zone.
 
-promesas gracias al event loop hacen consultas asicronas
+promesas gracias al event loop hacen consultas asicronas, crea una linea distinta para simular un multi hilo
 
 console.time()
 //codigo a medir en tiempo
