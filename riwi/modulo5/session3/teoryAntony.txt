@@ -1,0 +1,12 @@
+bumbling js events
+capture js events
+
+##variables
+
+var global con el mismo espacio de dato
+let mutable
+const inmutable
+
+hoisting capacidad de expansion de una variable
+
+funcion anonima arrow function 
